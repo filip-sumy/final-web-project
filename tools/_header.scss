@@ -1,0 +1,171 @@
+.header {
+    width: 100%;
+    background-color: #74C69D;
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 135px;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            .logo__image {
+                display: block;
+                //align-items: center;
+            }
+            .logo__text {
+                // display: flex;
+                // align-items: center;
+                color:#FFFFFF;
+                font-family: "Work Sans";
+                font-size: 40px;
+                font-weight: 500;
+                text-align: left;
+            }    
+        }
+        .nav {
+            display: flex;
+            padding-top: 10px;
+            gap: 30px;
+            .nav__item {
+                list-style: none; 
+                font-family: "Work Sans";
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: right;
+                color: #FFFFFF;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .show {
+            display: none;
+        }
+    }
+    .container {
+        display: flex;
+        gap: 220px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 130px;
+        padding-right: 130px;
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .welcome {
+                font-family: "Work Sans";
+                font-size: 16px;
+                font-weight: 700;
+                //line-height: 20px;
+                letter-spacing: 5px;
+                text-align: left;
+                color: #FFFFFF;
+            }
+            .title {
+                font-family:"Crimson Text";
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 50px;
+                text-align: left;
+                color: #FFFFFF;
+            }
+            .description {
+                font-family: Work Sans;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 18.75px;
+                text-align: left;
+                color: #FFFFFF;
+            }
+            .button {
+                background-color: #FFFFFF;
+                width: 170px;
+                border-radius: 5px;
+                .button__text {
+                    padding: 13px 47.5px;
+                    width: 74px;
+                    font-family: "Work Sans";
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-align: center;
+                    color: #000000;
+                }
+                &:hover {
+                    cursor: pointer;
+                    transition: 0.5s linear;
+                    background-color: #74C69D;
+                    .button__text {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .image-block {
+            width: 645px;
+            .image {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .logo__text {
+        font-size: 30px !important;
+    }
+    .logo__image {
+        width: 45px !important;
+    }
+    .nav {
+        display: none !important;
+    }
+    .show {
+        display: flex !important;
+    }
+    .image-block {
+        width: 100% !important;
+    }
+    .image {
+        width: 100% !important;
+    }
+    .header__container {
+        padding: 17px 20px !important;
+        align-items: flex-start !important;
+    }
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        gap: 30px !important;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__container {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+    .container {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        gap: 75px !important;
+    }
+    .image-block {
+        max-width: 500px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header__container {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+    .container {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        gap: 75px !important;
+    }
+}
