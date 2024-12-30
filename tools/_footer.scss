@@ -18,3 +18,19 @@
     }
     
 }
+
+@media (max-width: 800px) {
+    .footer {
+        .footer__container {
+            //padding: 40px 60px;
+            flex-direction: column;
+            gap: 20px;
+            .container__items {
+                margin: 0 auto;
+            }
+        }
+        .container__label {
+            text-align: center;
+        }
+    }
+}

@@ -47,6 +47,7 @@
             .card__photo {
                 text-align: center;
             }
+            
             .member__name {
                 font-family: "Crimson Text";
                 font-size: 24px;
@@ -78,6 +79,12 @@
             text-align: center;
             color: #FFFFFF;
         }
+    }
+}
+
+@media (max-width: 637px) {
+    .members__card {
+        margin: 0 auto;
     }
 }
 
